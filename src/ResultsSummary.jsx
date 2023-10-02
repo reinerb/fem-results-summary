@@ -1,7 +1,7 @@
 import memoryIcon from './assets/images/icon-memory.svg';
 import reactionIcon from './assets/images/icon-reaction.svg';
 import verbalIcon from './assets/images/icon-verbal.svg';
-import visualIcon from './assets/images/icon-Visual.svg';
+import visualIcon from './assets/images/icon-visual.svg';
 import PropTypes from 'prop-types';
 
 ResultsSummary.propTypes = {
