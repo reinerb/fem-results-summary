@@ -24,7 +24,9 @@ function ResultsSummary({
       <section className='bg-gradient-to-b from-light-slate-blue to-light-royal-blue flex flex-col items-center pt-4 pb-8 px-8 rounded-b-2xl gap-4 md:rounded-t-2xl md:justify-center md:gap-8 md:px-12'>
         <h1 className='text-light-lavender font-bold'>Your Result</h1>
         <div className='text-light-lavender text-sm flex flex-col items-center px-10 py-8 rounded-full gap-2 bg-gradient-to-b from-violet-blue to-persian-blue'>
-          <span className='font-extrabold text-5xl text-white'>76</span>
+          <span className='font-extrabold text-5xl text-white'>
+            {Math.floor((reaction + memory + verbal + visual) / 4)}
+          </span>
           <span className='text-light-lavender opacity-60'>of 100</span>
         </div>
         <div className='flex flex-col gap-2 items-center'>
