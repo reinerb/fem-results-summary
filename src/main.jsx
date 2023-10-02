@@ -5,6 +5,8 @@ import './styles/globals.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <div className='md:grid md:place-items-center md:min-h-screen'>
+      <App />
+    </div>
   </React.StrictMode>
 );

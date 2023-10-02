@@ -5,8 +5,8 @@ import visualIcon from './assets/images/icon-Visual.svg';
 
 function App() {
   return (
-    <article>
-      <section className='bg-gradient-to-b from-light-slate-blue to-light-royal-blue flex flex-col items-center pt-4 pb-8 px-8 rounded-b-2xl gap-4'>
+    <main className='md:grid md:grid-cols-2 md:max-w-xl md:shadow-2xl md:rounded-2xl md:overflow-hidden'>
+      <section className='bg-gradient-to-b from-light-slate-blue to-light-royal-blue flex flex-col items-center pt-4 pb-8 px-8 rounded-b-2xl gap-4 md:rounded-t-2xl md:justify-center md:gap-8 md:px-12'>
         <h1 className='text-light-lavender font-bold'>Your Result</h1>
         <div className='text-light-lavender text-sm flex flex-col items-center px-10 py-8 rounded-full gap-2 bg-gradient-to-b from-violet-blue to-persian-blue'>
           <span className='font-extrabold text-5xl text-white'>76</span>
@@ -19,13 +19,13 @@ function App() {
           </p>
         </div>
       </section>
-      <section className='flex flex-col gap-3 p-6'>
-        <h2 className='font-bold mb-1'>Summary</h2>
+      <section className='flex flex-col gap-3 p-6 flex-shrink-0 md:p-8'>
+        <h2 className='font-bold mb-1 md:text-lg'>Summary</h2>
         <div className='category bg-light-red bg-opacity-5'>
           <img src={reactionIcon} />
           <p className='text-light-red font-bold flex-grow'>Reaction</p>
           <p className='category__score'>
-            <span>72</span>
+            <span>80</span>
             <span>/</span>
             <span>100</span>
           </p>
@@ -34,7 +34,7 @@ function App() {
           <img src={memoryIcon} />
           <p className='text-orangey-yellow font-bold flex-grow'>Memory</p>
           <p className='category__score'>
-            <span>72</span>
+            <span>92</span>
             <span>/</span>
             <span>100</span>
           </p>
@@ -43,7 +43,7 @@ function App() {
           <img src={verbalIcon} />
           <p className='text-green-teal font-bold flex-grow'>Verbal</p>
           <p className='category__score'>
-            <span>72</span>
+            <span>61</span>
             <span>/</span>
             <span>100</span>
           </p>
@@ -57,11 +57,11 @@ function App() {
             <span>100</span>
           </p>
         </div>
-        <button className='text-white bg-dark-gray-blue rounded-full p-3 mt-2'>
+        <button className='text-white bg-dark-gray-blue rounded-full p-3 mt-2 text-sm font-bold'>
           Continue
         </button>
       </section>
-    </article>
+    </main>
   );
 }
 
