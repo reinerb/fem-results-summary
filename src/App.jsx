@@ -57,7 +57,7 @@ function App() {
             <span>100</span>
           </p>
         </div>
-        <button className='text-white bg-dark-gray-blue rounded-full p-3 mt-2 text-sm font-bold'>
+        <button className='text-white bg-dark-gray-blue rounded-full p-3 mt-2 text-sm font-bold hover:bg-gradient-to-b hover:from-light-slate-blue hover:to-light-royal-blue'>
           Continue
         </button>
       </section>
