@@ -6,16 +6,18 @@ import visualIcon from './assets/images/icon-Visual.svg';
 function App() {
   return (
     <article>
-      <section>
-        <h1>Your Result</h1>
-        <div>
-          <span className='font-extrabold text-6xl'>76</span>
-          <span>of 100</span>
+      <section className='bg-gradient-to-b from-light-slate-blue to-light-royal-blue flex flex-col items-center pt-4 pb-8 px-8 rounded-b-2xl gap-4'>
+        <h1 className='text-light-lavender font-bold'>Your Result</h1>
+        <div className='text-light-lavender text-sm flex flex-col items-center px-10 py-8 rounded-full gap-2 bg-gradient-to-b from-violet-blue to-persian-blue'>
+          <span className='font-extrabold text-5xl text-white'>76</span>
+          <span className='text-light-lavender opacity-60'>of 100</span>
         </div>
-        <p>Great</p>
-        <p>
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
+        <div className='flex flex-col gap-2 items-center'>
+          <p className='text-white text-xl font-bold'>Great</p>
+          <p className='text-sm text-center text-light-lavender'>
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
       </section>
       <section>
         <h2>Summary</h2>
