@@ -2,8 +2,23 @@ import memoryIcon from './assets/images/icon-memory.svg';
 import reactionIcon from './assets/images/icon-reaction.svg';
 import verbalIcon from './assets/images/icon-verbal.svg';
 import visualIcon from './assets/images/icon-Visual.svg';
+import PropTypes from 'prop-types';
 
-function App() {
+App.propTypes = {
+  reaction: PropTypes.number,
+  memory: PropTypes.number,
+  verbal: PropTypes.number,
+  visual: PropTypes.number,
+  position: PropTypes.number,
+};
+
+function App({
+  reaction = 80,
+  memory = 92,
+  verbal = 61,
+  visual = 72,
+  position = 65,
+}) {
   return (
     <main className='md:grid md:grid-cols-2 md:max-w-xl md:shadow-2xl md:rounded-2xl md:overflow-hidden'>
       <section className='bg-gradient-to-b from-light-slate-blue to-light-royal-blue flex flex-col items-center pt-4 pb-8 px-8 rounded-b-2xl gap-4 md:rounded-t-2xl md:justify-center md:gap-8 md:px-12'>
@@ -15,7 +30,8 @@ function App() {
         <div className='flex flex-col gap-2 items-center'>
           <p className='text-white text-xl font-bold'>Great</p>
           <p className='text-sm text-center text-light-lavender'>
-            You scored higher than 65% of the people who have taken these tests.
+            You scored higher than {position}% of the people who have taken
+            these tests.
           </p>
         </div>
       </section>
@@ -25,7 +41,7 @@ function App() {
           <img src={reactionIcon} />
           <p className='text-light-red font-bold flex-grow'>Reaction</p>
           <p className='category__score'>
-            <span>80</span>
+            <span>{reaction}</span>
             <span>/</span>
             <span>100</span>
           </p>
@@ -34,7 +50,7 @@ function App() {
           <img src={memoryIcon} />
           <p className='text-orangey-yellow font-bold flex-grow'>Memory</p>
           <p className='category__score'>
-            <span>92</span>
+            <span>{memory}</span>
             <span>/</span>
             <span>100</span>
           </p>
@@ -43,7 +59,7 @@ function App() {
           <img src={verbalIcon} />
           <p className='text-green-teal font-bold flex-grow'>Verbal</p>
           <p className='category__score'>
-            <span>61</span>
+            <span>{verbal}</span>
             <span>/</span>
             <span>100</span>
           </p>
@@ -52,7 +68,7 @@ function App() {
           <img src={visualIcon} />
           <p className='text-cobalt-blue font-bold flex-grow'>Visual</p>
           <p className='category__score'>
-            <span>72</span>
+            <span>{visual}</span>
             <span>/</span>
             <span>100</span>
           </p>
