@@ -9,7 +9,7 @@ function App() {
       <section>
         <h1>Your Result</h1>
         <div>
-          <span>76</span>
+          <span className='font-extrabold text-6xl'>76</span>
           <span>of 100</span>
         </div>
         <p>Great</p>
@@ -21,7 +21,7 @@ function App() {
         <h2>Summary</h2>
         <div>
           <img src={memoryIcon} />
-          <p>Visual</p>
+          <p className='text-orangey-yellow font-bold'>Memory</p>
           <p>
             <span>72</span>
             <span>/</span>
@@ -30,7 +30,7 @@ function App() {
         </div>
         <div>
           <img src={reactionIcon} />
-          <p>Visual</p>
+          <p className='text-light-red font-bold'>Reaction</p>
           <p>
             <span>72</span>
             <span>/</span>
@@ -39,7 +39,7 @@ function App() {
         </div>
         <div>
           <img src={verbalIcon} />
-          <p>Visual</p>
+          <p className='text-green-teal font-bold'>Verbal</p>
           <p>
             <span>72</span>
             <span>/</span>
@@ -48,7 +48,7 @@ function App() {
         </div>
         <div>
           <img src={visualIcon} />
-          <p>Visual</p>
+          <p className='text-cobalt-blue font-bold'>Visual</p>
           <p>
             <span>72</span>
             <span>/</span>
