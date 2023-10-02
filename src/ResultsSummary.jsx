@@ -38,7 +38,10 @@ function ResultsSummary({
       <section className='flex flex-col gap-3 p-6 flex-shrink-0 md:p-8'>
         <h2 className='font-bold mb-1 md:text-lg'>Summary</h2>
         <div className='category bg-light-red bg-opacity-5'>
-          <img src={reactionIcon} />
+          <img
+            src={reactionIcon}
+            alt='reaction icon'
+          />
           <p className='text-light-red font-bold flex-grow'>Reaction</p>
           <p className='category__score'>
             <span>{reaction}</span>
@@ -47,7 +50,10 @@ function ResultsSummary({
           </p>
         </div>
         <div className='category bg-orangey-yellow bg-opacity-5'>
-          <img src={memoryIcon} />
+          <img
+            src={memoryIcon}
+            alt='memory icon'
+          />
           <p className='text-orangey-yellow font-bold flex-grow'>Memory</p>
           <p className='category__score'>
             <span>{memory}</span>
@@ -56,7 +62,10 @@ function ResultsSummary({
           </p>
         </div>
         <div className='category bg-green-teal bg-opacity-5'>
-          <img src={verbalIcon} />
+          <img
+            src={verbalIcon}
+            alt='verbal icon'
+          />
           <p className='text-green-teal font-bold flex-grow'>Verbal</p>
           <p className='category__score'>
             <span>{verbal}</span>
@@ -65,7 +74,10 @@ function ResultsSummary({
           </p>
         </div>
         <div className='category bg-cobalt-blue bg-opacity-5'>
-          <img src={visualIcon} />
+          <img
+            src={visualIcon}
+            alt='visual icon'
+          />
           <p className='text-cobalt-blue font-bold flex-grow'>Visual</p>
           <p className='category__score'>
             <span>{visual}</span>
