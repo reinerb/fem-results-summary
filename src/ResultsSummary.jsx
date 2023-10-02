@@ -4,7 +4,7 @@ import verbalIcon from './assets/images/icon-verbal.svg';
 import visualIcon from './assets/images/icon-Visual.svg';
 import PropTypes from 'prop-types';
 
-App.propTypes = {
+ResultsSummary.propTypes = {
   reaction: PropTypes.number,
   memory: PropTypes.number,
   verbal: PropTypes.number,
@@ -12,7 +12,7 @@ App.propTypes = {
   position: PropTypes.number,
 };
 
-function App({
+function ResultsSummary({
   reaction = 80,
   memory = 92,
   verbal = 61,
@@ -81,4 +81,4 @@ function App({
   );
 }
 
-export default App;
+export default ResultsSummary;
