@@ -11,3 +11,21 @@
     font-weight: 500;
   }
 }
+
+@layer components {
+  .category {
+    @apply flex flex-row gap-4 p-3 rounded-md bg-opacity-10 items-center;
+  }
+
+  .category__score {
+    @apply flex gap-2 text-sm;
+  }
+
+  .category__score > :first-child {
+    @apply font-bold;
+  }
+
+  .category__score > :not(:first-child) {
+    @apply text-dark-gray-blue font-bold opacity-60;
+  }
+}

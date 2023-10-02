@@ -19,45 +19,47 @@ function App() {
           </p>
         </div>
       </section>
-      <section>
-        <h2>Summary</h2>
-        <div>
-          <img src={memoryIcon} />
-          <p className='text-orangey-yellow font-bold'>Memory</p>
-          <p>
-            <span>72</span>
-            <span>/</span>
-            <span>100</span>
-          </p>
-        </div>
-        <div>
+      <section className='flex flex-col gap-3 p-6'>
+        <h2 className='font-bold mb-1'>Summary</h2>
+        <div className='category bg-light-red bg-opacity-5'>
           <img src={reactionIcon} />
-          <p className='text-light-red font-bold'>Reaction</p>
-          <p>
+          <p className='text-light-red font-bold flex-grow'>Reaction</p>
+          <p className='category__score'>
             <span>72</span>
             <span>/</span>
             <span>100</span>
           </p>
         </div>
-        <div>
+        <div className='category bg-orangey-yellow bg-opacity-5'>
+          <img src={memoryIcon} />
+          <p className='text-orangey-yellow font-bold flex-grow'>Memory</p>
+          <p className='category__score'>
+            <span>72</span>
+            <span>/</span>
+            <span>100</span>
+          </p>
+        </div>
+        <div className='category bg-green-teal bg-opacity-5'>
           <img src={verbalIcon} />
-          <p className='text-green-teal font-bold'>Verbal</p>
-          <p>
+          <p className='text-green-teal font-bold flex-grow'>Verbal</p>
+          <p className='category__score'>
             <span>72</span>
             <span>/</span>
             <span>100</span>
           </p>
         </div>
-        <div>
+        <div className='category bg-cobalt-blue bg-opacity-5'>
           <img src={visualIcon} />
-          <p className='text-cobalt-blue font-bold'>Visual</p>
-          <p>
+          <p className='text-cobalt-blue font-bold flex-grow'>Visual</p>
+          <p className='category__score'>
             <span>72</span>
             <span>/</span>
             <span>100</span>
           </p>
         </div>
-        <button>Continue</button>
+        <button className='text-white bg-dark-gray-blue rounded-full p-3 mt-2'>
+          Continue
+        </button>
       </section>
     </article>
   );
